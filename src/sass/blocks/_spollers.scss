@@ -1,0 +1,43 @@
+.spollers-block {
+	&__title {
+		position: relative;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 55px;
+		color: #ffffff;
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 27px;
+			height: 26px;
+			background: url("../icons/arrow.svg") no-repeat center center;
+			transition: all 0.4s ease;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+		}
+		&._active {
+			color: $main-color;
+			&::before {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+			}
+		}
+	}
+
+	&__body {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 55px;
+		color: #ffffff;
+	}
+}

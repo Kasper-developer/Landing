@@ -1,0 +1,123 @@
+.reviews {
+	padding-bottom: 257px;
+	&__subtitle {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		margin-bottom: 90px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-end;
+	}
+	&__swiper {
+		display: flex;
+		width: 863px;
+		margin: 0;
+	}
+
+	&-slide {
+		background: rgba(24, 24, 24, 0.59);
+		padding: 35px 25px;
+		width: 420px;
+		height: auto;
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&__image {
+			width: 82px;
+			height: 82px;
+			border-radius: 100%;
+			margin-bottom: 10px;
+		}
+
+		&__title {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 170%;
+			color: #ffffff;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 170%;
+			color: #ffffff;
+			min-height: 135px;
+		}
+	}
+	&-button-prev {
+		width: 41px;
+		height: 23px;
+		margin-left: 126px;
+		margin-right: 20px;
+		margin-bottom: 48px;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -16px;
+			left: -38px;
+			width: 170%;
+			height: 239%;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-ms-border-radius: 100%;
+			-o-border-radius: 100%;
+		}
+		&::after {
+			content: "";
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			top: -23px;
+			left: -37px;
+			background: $main-color;
+			border-radius: 100%;
+			z-index: -1;
+		}
+	}
+	&-button-next {
+		width: 41px;
+		height: 23px;
+		margin-left: 100px;
+		margin-right: 25px;
+		margin-bottom: 20px;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -16px;
+			left: 13px;
+			width: 164%;
+			height: 249%;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-ms-border-radius: 100%;
+			-o-border-radius: 100%;
+		}
+		&::after {
+			content: "";
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			top: -23px;
+			left: 11px;
+			background: $main-color;
+			border-radius: 100%;
+			z-index: -1;
+		}
+	}
+}

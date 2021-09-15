@@ -1,0 +1,104 @@
+.contacts {
+	padding-bottom: 70px;
+	padding-top: 70px;
+	background: url("../img/contacts_bg.png") no-repeat left;
+	background-color: #000;
+	z-index: 0;
+
+	&__author {
+		position: relative;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #ffffff;
+		cursor: pointer;
+		text-align: right;
+		z-index: 1;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -23px;
+			right: 270px;
+			width: 67px;
+			height: 67px;
+			border-radius: 100%;
+			background: $main-color;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-ms-border-radius: 100%;
+			-o-border-radius: 100%;
+			z-index: -1;
+		}
+	}
+	&-body {
+		margin-left: 50%;
+		min-height: 700px;
+		max-width: 650px;
+		display: flex;
+		flex-direction: column;
+		&__title {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 55px;
+			color: #fff;
+			margin-bottom: 35px;
+		}
+
+		&__subtitle {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 170%;
+			color: #fff;
+			margin-bottom: 50px;
+		}
+	}
+	&-form {
+		display: flex;
+		flex-direction: column;
+		& label {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 170%;
+			color: #fff;
+		}
+		&__input,
+		&__message {
+			width: 100%;
+			padding: 15px 15px;
+			background: none;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #fff;
+			font-size: 18px;
+			color: #fff;
+		}
+
+		&__message {
+			resize: none;
+			padding-bottom: 0;
+			min-height: auto;
+			line-height: 25px;
+		}
+
+		&__btn {
+			width: 180px;
+			height: 50px;
+			padding: 15px;
+			background: $main-color;
+			margin-bottom: 50px;
+			color: #fff;
+			font-weight: bold;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+			&:hover {
+				background: #1062c0;
+			}
+		}
+	}
+}
